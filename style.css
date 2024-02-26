@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  /* border :solid 2px red; */
+  font-family: "Lobster", cursive;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Navbar*/
+#menu {
+  display: flex;
+  flex-basis: content;
+  border: 1px solid rgb(57, 57, 57);
+  background-color: #fdf4f4;
+  width: 100%;
+  /* border-radius: 20px; */
+}
+
+ul,
+a {
+  display: flex;
+  justify-content: center;
+  list-style-type: none !important;
+  width: 100%;
+  text-decoration: none;
+}
+
+.navli {
+  text-decoration-line: none;
+  margin: 20px;
+  padding-inline: 25px;
+  text-shadow: 1px 1px 2px black, 0 0 15px rgb(174, 85, 209),
+    0 0 5px rgb(174, 85, 209);
+}
+
+.policemenu:hover {
+  color: #f42aea;
+}
+
+.policemenu {
+  color: #ffffff;
+  font-size: xx-large;
+}
+
+
+/* Sidebar */
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: content;
+  width: 20vw;
+  height: 100vh;
+  background-color: #f1f1f1;
+  border: 1px solid rgb(57, 57, 57);
+  position: absolute;
+  /* border-radius: 20px; */
+  min-width: 138px;
+  text-align: center;
+}
+/* Animation passage souris */
+#spanphoto:hover {
+  animation: myAnim 2s ease 0s infinite normal forwards;
+}
+/* Animation photo */
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+#spanphoto img {
+  border-radius: 140px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  margin-top: 25px;
+}
+.title {
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 10px #ae55d1, 0 0 5px rgb(174, 85, 209);
+  padding: 25px;
+  font-size: 23px;
+}
+.text {
+  padding: 15px;
+  color: rgb(139, 26, 224);
+  font-size: 20px;
+}
+.picto {
+  margin: 8px;
+  font-size: 20px;
+  color: rgb(139, 26, 224);
+}
+/* Colonne de droite */
+#div2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  margin-left: 20vw;
+}
+video {
+  height: 100vh;
+  width: 78.8vw;
+  object-fit: cover; 
+
+}
